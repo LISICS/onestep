@@ -1,4 +1,4 @@
-<h1 align="center">Hi there, I'm <a href="https://krasnodar.hh.ru/resume/44bec338ff0c4154810039ed1f456967654c53" target="_blank">Alexander</a> 
+<h1 align="center">Hi there, I'm <a href="[https://krasnodar.hh.ru/resume/44bec338ff0c4154810039ed1f456967654c53](https://my.sky.pro/)" target="_blank">Alexander</a> 
 <img src="https://github.com/blackcater/blackcater/raw/main/images/Hi.gif" height="32"/></h1>
 <h3 align="center">Student from Russia QA Engineer 🇷🇺</h3>
 
