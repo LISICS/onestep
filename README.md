@@ -22,8 +22,8 @@ Qase.io, Confluence, Figma, pgAdmin, Android Studio;
 - Навыки командной и индивидуальной работы
 
   # В данный момент ознакамливаюсь с базывыми знаниями автоматизации.
-
-  ### Ссылка на резюме  https://krasnodar.hh.ru/resume/44bec338ff0c4154810039ed1f456967654c53
+<h1 align="center">Ссылка на резюме:<a href="https://krasnodar.hh.ru/resume/44bec338ff0c4154810039ed1f456967654c53" target="_blank">Alexander</a> 
+  ### Ссылка на резюме:https://krasnodar.hh.ru/resume/44bec338ff0c4154810039ed1f456967654c53
 
 
 
