@@ -2,7 +2,7 @@
 <img src="https://github.com/blackcater/blackcater/raw/main/images/Hi.gif" height="32"/></h1>
 <h3 align="center">Student from Russia QA Engineer 🇷🇺</h3>
 
-
+[![Typing SVG](https://readme-typing-svg.herokuapp.com?color=%2336BCF7&lines=Computer+science+IT)](https://git.io/typing-svg)
 
 
 Обо мне 
@@ -21,17 +21,6 @@ Qase.io, Confluence, Figma, pgAdmin, Android Studio;
 - Навыки командной и индивидуальной работы
 
   В данный момент ознакамливаюсь с базывыми знаниями Автоматизации. 
-
-
-[![Typing SVG](https://readme-typing-svg.herokuapp.com?color=%2336BCF7&lines=Computer+science+IT)](https://git.io/typing-svg)
-
-
-
-
-
-
-
-
 
 
 
