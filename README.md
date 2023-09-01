@@ -5,7 +5,7 @@
 [![Typing SVG](https://readme-typing-svg.herokuapp.com?color=%2336BCF7&lines=Computer+science+IT)](https://git.io/typing-svg)
 
 
-№Обо мне: 
+#Обо мне: 
 Привет! Мое имя Александр. Я ищу работу QA-Тестировщиком.
 
 Мои знания и пратические навыки: - Знания видов тестирования, техник тест-дизайна и методологий тестирования;
