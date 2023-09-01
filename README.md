@@ -23,7 +23,7 @@ Qase.io, Confluence, Figma, pgAdmin, Android Studio;
 
   # В данный момент ознакамливаюсь с базывыми знаниями автоматизации.
 
-  ### Ссылка на резюме https://krasnodar.hh.ru/resume/44bec338ff0c4154810039ed1f456967654c53<num>
+  ### Ссылка на резюме Visit https://krasnodar.hh.ru/resume/44bec338ff0c4154810039ed1f456967654c53
 
 
 
