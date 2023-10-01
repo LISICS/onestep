@@ -1,0 +1,141 @@
+{
+	"info": {
+		"_postman_id": "c978b7bf-fdb5-43f8-830c-5e09d985fc54",
+		"name": "Читай город",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25453546"
+	},
+	"item": [
+		{
+			"name": "New Request",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczovL3VzZXItcmlnaHQiLCJzdWIiOiJkNWM0OWFkMjhlNDcwYjU2OWI1NTg4NWI2ODYyNzg3YzNkMjE2NGJmY2QwZDg0YjBlNTdkN2ZjNGFiODU4ZTlkIiwiaWF0IjoxNjk2MTUwNjk3LCJleHAiOjE2OTYzMjM0OTcsInR5cGUiOjEwfQ.DI2pkf-OxpxIqmywuFKbjEzDrO6x4MgLstHUuhes0jI",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 2996733,\r\n    \"adData\": {\r\n        \"item_list_name\": \"index\",\r\n        \"product_shelf\": \"Новинки литературы\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseUrl}}/product",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"product"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Изменение количества одного товара в корзине",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczovL3VzZXItcmlnaHQiLCJzdWIiOiJkNWM0OWFkMjhlNDcwYjU2OWI1NTg4NWI2ODYyNzg3YzNkMjE2NGJmY2QwZDg0YjBlNTdkN2ZjNGFiODU4ZTlkIiwiaWF0IjoxNjk2MTUwNjk3LCJleHAiOjE2OTYzMjM0OTcsInR5cGUiOjEwfQ.DI2pkf-OxpxIqmywuFKbjEzDrO6x4MgLstHUuhes0jI",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n    {\r\n        \"id\": 84489090,\r\n        \"quantity\": 2\r\n    }\r\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseUrl}}",
+					"host": [
+						"{{baseUrl}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Просмотр товаров в корзине",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczovL3VzZXItcmlnaHQiLCJzdWIiOiJkNWM0OWFkMjhlNDcwYjU2OWI1NTg4NWI2ODYyNzg3YzNkMjE2NGJmY2QwZDg0YjBlNTdkN2ZjNGFiODU4ZTlkIiwiaWF0IjoxNjk2MTUwNjk3LCJleHAiOjE2OTYzMjM0OTcsInR5cGUiOjEwfQ.DI2pkf-OxpxIqmywuFKbjEzDrO6x4MgLstHUuhes0jI",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{baseUrl}}",
+					"host": [
+						"{{baseUrl}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Удаление товара в корзине",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczovL3VzZXItcmlnaHQiLCJzdWIiOiJkNWM0OWFkMjhlNDcwYjU2OWI1NTg4NWI2ODYyNzg3YzNkMjE2NGJmY2QwZDg0YjBlNTdkN2ZjNGFiODU4ZTlkIiwiaWF0IjoxNjk2MTUwNjk3LCJleHAiOjE2OTYzMjM0OTcsInR5cGUiOjEwfQ.DI2pkf-OxpxIqmywuFKbjEzDrO6x4MgLstHUuhes0jI",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{baseUrl}}",
+					"host": [
+						"{{baseUrl}}"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "baseUrl",
+			"value": "https://web-gate.chitai-gorod.ru/api/v1/cart",
+			"type": "string"
+		}
+	]
+}

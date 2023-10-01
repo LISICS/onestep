@@ -1,0 +1,109 @@
+{
+	"info": {
+		"_postman_id": "21b4f3ab-d058-47a0-9e77-d7c18261720a",
+		"name": "Safe Browsing API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25453546"
+	},
+	"item": [
+		{
+			"name": "Получение списков",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://sba.yandex.net/v4/threatLists?key=3c426ce3-bc75-44bb-bf99-f99c4c4138c7",
+					"protocol": "https",
+					"host": [
+						"sba",
+						"yandex",
+						"net"
+					],
+					"path": [
+						"v4",
+						"threatLists"
+					],
+					"query": [
+						{
+							"key": "key",
+							"value": "3c426ce3-bc75-44bb-bf99-f99c4c4138c7"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Lookup. Проверка по URL№1",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"client\": {\r\n        \"clientId\": \"{client_name}\",\r\n        \"clientVersion\": \"{1.1.1}\"\r\n    },\r\n    \"threatInfo\": {\r\n        \"threatTypes\": [\r\n            \"MALWARE\",\r\n            \"SOCIAL_ENGINEERING\"\r\n        ],\r\n        \"platformTypes\": [\r\n            \"WINDOWS\"\r\n        ],\r\n        \"threatEntryTypes\": [\r\n            \"URL\"\r\n        ],\r\n        \"threatEntries\": [\r\n            {\r\n                \"url\": \"https://ru.wikipedia.org/wiki/%D0%97%D0%B0%D0%B3%D0%BB%D0%B0%D0%B2%D0%BD%D0%B0%D1%8F_%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D0%B0\"\r\n            }\r\n        ]\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://sba.yandex.net/v4/threatMatches:find?key=3c426ce3-bc75-44bb-bf99-f99c4c4138c7",
+					"protocol": "https",
+					"host": [
+						"sba",
+						"yandex",
+						"net"
+					],
+					"path": [
+						"v4",
+						"threatMatches:find"
+					],
+					"query": [
+						{
+							"key": "key",
+							"value": "3c426ce3-bc75-44bb-bf99-f99c4c4138c7"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Lookup. Проверка по URL№2",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"client\": {\r\n        \"clientId\": \"{client_name}\",\r\n        \"clientVersion\": \"{1.1.1}\"\r\n    },\r\n    \"threatInfo\": {\r\n        \"threatTypes\": [\r\n            \"MALWARE\",\r\n            \"SOCIAL_ENGINEERING\"\r\n        ],\r\n        \"platformTypes\": [\r\n            \"WINDOWS\"\r\n        ],\r\n        \"threatEntryTypes\": [\r\n            \"URL\"\r\n        ],\r\n        \"threatEntries\": [\r\n            {\r\n                \"url\": \"https://www.chitai-gorod.ru/\"\r\n            }\r\n        ]\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://sba.yandex.net/v4/threatMatches:find?key=3c426ce3-bc75-44bb-bf99-f99c4c4138c7",
+					"protocol": "https",
+					"host": [
+						"sba",
+						"yandex",
+						"net"
+					],
+					"path": [
+						"v4",
+						"threatMatches:find"
+					],
+					"query": [
+						{
+							"key": "key",
+							"value": "3c426ce3-bc75-44bb-bf99-f99c4c4138c7"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
