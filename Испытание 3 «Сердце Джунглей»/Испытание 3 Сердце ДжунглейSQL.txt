@@ -12,7 +12,7 @@ INNER JOIN Tickets ON Destination.id = Tickets.id_destination;
 
 Дополните предыдущий запрос: ограничьте маршруты статусом «Без визы».
 2)SELECT Destination.name 
-FROM Destinatio JOIN Tickets ON Destinatio.id = Tickets.id_destinatio join Status on Destinatio.id_status = Status.id 
+FROM Destination JOIN Tickets ON Destination.id = Tickets.id_destination join Status on Destination.id_status = Status.id 
 where Status.name=‘Без визы’;
 
 Найдите маршруты, максимальная цена которых выше общей средней. Общая средняя находится как среднее значение lowest_price и highest_price. Вывести названия и высшую цену.
