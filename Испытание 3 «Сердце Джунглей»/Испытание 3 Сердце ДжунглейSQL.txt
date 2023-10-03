@@ -6,24 +6,23 @@ Status (id, name).
 Необходимо: составить запросы, которые помогут получить следующую информацию:
 
 Уникальные названия маршрутов (destination.name), для которых существуют билеты (есть запись в tickets). Вывести только названия.
-Дополните предыдущий запрос: ограничьте маршруты статусом «Без визы».
-Найдите маршруты, максимальная цена которых выше общей средней. Общая средняя находится как среднее значение lowest_price и highest_price. Вывести названия и высшую цену.
-
-
-
 1)SELECT DISTINCT destination.name 
 FROM Destination 
 INNER JOIN Tickets ON Destination.id = Tickets.id_destination;
 
+Дополните предыдущий запрос: ограничьте маршруты статусом «Без визы».
 2)SELECT Destination.name 
 FROM Destinatio JOIN Tickets ON Destinatio.id = Tickets.id_destinatio join Status on Destinatio.id_status = Status.id 
 where Status.name=‘Без визы’;
 
+Найдите маршруты, максимальная цена которых выше общей средней. Общая средняя находится как среднее значение lowest_price и highest_price. Вывести названия и высшую цену.
 3)SELECT Destination.name,MAX(Tickets.highest_price) 
 FROM Destinatio JOIN Tickets ON Destinatio.id=Tickets.id_destinatio 
 WHERE Tickets.highest_price  
 (SELECT AVG(lowest_price.highest_price) from Tickets) 
 GROUP BY Destinatio.name;
+
+
 
 Задача 2
 Дано: две таблицы.
