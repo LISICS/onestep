@@ -30,20 +30,16 @@ GROUP BY Destinatio.name;
 Необходимо: составить запросы, которые помогут получить следующую информацию:
 
 Список уникальных классов. Вывести только названия.
-Количество часов, проведенных на занятиях, для каждого пользователя. Вывести фамилию, имя и количество часов.
-Средний возраст пользователей, посещающих класс Flex.
-
-
 1)SELECT DISTINCT class_name FROM visits;
 
-
+Количество часов, проведенных на занятиях, для каждого пользователя. Вывести фамилию, имя и количество часов.
 2)SELECT user.user_name, user.user_surname, COUNT(visits.hours_spent) 
 FROM user  
 JOIN visits  
 ON user.id_user = visits.id_user 
 GROUP BY user.user_name, user.user_surname;
 
-
+Средний возраст пользователей, посещающих класс Flex.
 3)SELECT AVG(user.age)  
 FROM user 
 JOIN visits 
@@ -58,16 +54,14 @@ WHERE class_name = 'Flex';
 Необходимо: составить запросы, которые помогут получить следующую информацию:
 
 Уникальные названия всех книг, опубликованных после 1990 года. Вывести только названия.
-Для каждого автора найти сумму напечатанных страниц. Вывести полное имя автора и сумму страниц.
-Подсчитать количество книг авторов каждого века. Вывести век и количество книг.
-
-
 1)SELECT DISTINCT title FROM books WHERE year_published > 1990;
 
+Для каждого автора найти сумму напечатанных страниц. Вывести полное имя автора и сумму страниц.
 2)SELECT author.name, SUM(pages_printed) 
 FROM authors JOIN books ON authors.id = books.author_id 
 GROUP BY author.name;
 
+Подсчитать количество книг авторов каждого века. Вывести век и количество книг.
 3)SELECT century, COUNT(*) 
 FROM authors JOIN books ON authors.id = books.author_id JOIN (SELECT author_id, century FROM authors WHERE century IS NOT NULL) AS authors_century ON authors.id = authors_century.author_id 
 GROUP BY century;
