@@ -1,0 +1,136 @@
+{
+	"info": {
+		"_postman_id": "f0d08275-67f3-408d-8f79-11bd75e6d331",
+		"name": "YouTube",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25453546"
+	},
+	"item": [
+		{
+			"name": "Получить список видео по id jifUJrYPZQQ",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}?part=snippet%2CcontentDetails%2Cstatistics&id=jifUJrYPZQQ&key=AIzaSyCGTnHHnRyJCRrGyPJ8rLKF05FofywkLhU",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"query": [
+						{
+							"key": "part",
+							"value": "snippet%2CcontentDetails%2Cstatistics"
+						},
+						{
+							"key": "id",
+							"value": "jifUJrYPZQQ"
+						},
+						{
+							"key": "key",
+							"value": "AIzaSyCGTnHHnRyJCRrGyPJ8rLKF05FofywkLhU"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Поставить like видео с id jifUJrYPZQQ",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "ya29.a0AfB_byAi4OqTPmSZBem1KjzX0gy1RcYZu2mDdfd3q3xuzCFrndjAqP6Z8kd4ey1Iqh15gInN_I2gkoR08T1K-VyExE8qGEHk65LhHKBjNM7bUDy2nfpy0elDdFMfyFQ1lL2YZv1sP2T-YOf7xY0ysOCQ8MAaYQTFaiupaCgYKAVgSARMSFQGOcNnC_xKhsVmj8bIM0Fu16tY05w0171",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "{{baseUrl}}rate?id=jifUJrYPZQQ&rating=like",
+					"host": [
+						"{{baseUrl}}rate"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "jifUJrYPZQQ"
+						},
+						{
+							"key": "rating",
+							"value": "like"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Получить список самых популярных видео",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}?part=snippet%2CcontentDetails%2Cstatistics&chart=mostPopular&regionCode=US&key=AIzaSyCOMXft-BPUNRwWlKdbAn2A-sRL1AYRYoM",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"query": [
+						{
+							"key": "part",
+							"value": "snippet%2CcontentDetails%2Cstatistics"
+						},
+						{
+							"key": "chart",
+							"value": "mostPopular"
+						},
+						{
+							"key": "regionCode",
+							"value": "US"
+						},
+						{
+							"key": "key",
+							"value": "AIzaSyCOMXft-BPUNRwWlKdbAn2A-sRL1AYRYoM"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "baseUrl",
+			"value": "https://youtube.googleapis.com/youtube/v3/videos",
+			"type": "string"
+		}
+	]
+}
