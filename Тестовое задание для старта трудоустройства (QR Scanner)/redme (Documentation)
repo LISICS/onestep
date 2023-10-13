@@ -1,0 +1,50 @@
+YouTube
+﻿
+Получить список видео по id jifUJrYPZQQ
+GET https://youtube.googleapis.com/youtube/v3/videos?part=snippet%2CcontentDetails%2Cstatistics&id=jifUJrYPZQQ&key=AIzaSyCGTnHHnRyJCRrGyPJ8rLKF05FofywkLhU
+﻿
+
+Query Params
+part
+snippet%2CcontentDetails%2Cstatistics
+id
+jifUJrYPZQQ
+key
+AIzaSyCGTnHHnRyJCRrGyPJ8rLKF05FofywkLhU
+
+
+
+
+Поставить like видео с id jifUJrYPZQQ
+POST https://youtube.googleapis.com/youtube/v3/videosrate?id=jifUJrYPZQQ&rating=like
+﻿
+
+Authorization
+Bearer Token
+Token
+<token>
+Request Headers
+Accept
+application/json
+Query Params
+id
+jifUJrYPZQQ
+rating
+like
+
+
+
+
+Получить список самых популярных видео
+GET https://youtube.googleapis.com/youtube/v3/videos?part=snippet%2CcontentDetails%2Cstatistics&chart=mostPopular&regionCode=US&key=AIzaSyCOMXft-BPUNRwWlKdbAn2A-sRL1AYRYoM
+﻿
+
+Query Params
+part
+snippet%2CcontentDetails%2Cstatistics
+chart
+mostPopular
+regionCode
+US
+key
+AIzaSyCOMXft-BPUNRwWlKdbAn2A-sRL1AYRYoM
